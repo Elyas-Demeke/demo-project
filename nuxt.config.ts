@@ -8,12 +8,9 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  nitro: {
-    devProxy: {
-      '/api': {
-          target: 'https://dm-assignment-commonshare.koyeb.app/api',
-          changeOrigin: true
-      }
+  routeRules: {
+    '/api/**':{
+      proxy: 'https://dm-assignment-commonshare.koyeb.app/api/**'
     }
   },
   modules: [
