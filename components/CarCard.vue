@@ -11,7 +11,7 @@
             </button>
         </div>
         <div class="mb-9">
-            <img :src="car.img" alt="">
+            <img :src="car.img" class="h-36 object-contain" alt="">
             <div class="bg-white blur-md opacity-25 w-full h-14 -mt-10"></div>
         </div>
         <div class="flex text-[#90A3BF] justify-between mb-6">
