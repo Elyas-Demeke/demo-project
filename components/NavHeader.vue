@@ -26,7 +26,7 @@
 </template>
 
 <script setup>
-import { debounce } from 'lodash';   
+import lodash from 'lodash';
 
 const search = ref('')
 const suggestedCars = ref([])
@@ -56,7 +56,7 @@ const unFocus = () => {
 }
 
 
-watch(search, debounce(() => {
+watch(search, lodash.debounce(() => {
 	suggestSearch()
 }, 500))
 
